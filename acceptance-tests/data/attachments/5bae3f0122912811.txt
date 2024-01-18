@@ -1,0 +1,199 @@
+[*] running method core_negotiate_tlv_encryption
+[*] Negotiating TLV encryption
+[*] RSA key: 30820122300d06092a864886f70d01010105000382010f003082010a0282010100baa653fe922ec933a7f7e5137408e17756e22335cbb2e311256810b327603caef18f3c4c415a3f6eb74184e32fdaaffaddc298bf75e0584f394518f9871b8423d40d63aed375aebc825ecf17cb35d698460571dbb653139cddf71b845d2146ca56f27c8198fc88614520f2e1c8f80a78094a5088b8298e0ab1800cf483875ea10764c64d8f3a876088bff89d64b10a1d0f2e90a2d19a25dcae878f1d63c6f61e86f2166e1ae0ce61a065e40000ee39d0f8df0b8e832638252d083f38bdc8aebc36b1c417ddccc7bcc24f8db0c55330f61172c7418c14421b8f006614677c2c9c151eb83ce2e45ea903a1bb49e045d91149680d134d98ff5d58aaa393f5a3265d0203010001
+[*] AES key: 0x2ff2eec644d1f45e3f9fbc763f8f5411fc5c4122cabe8f89bf4d53aa604ca3db
+[*] Encrypted AES key: 0x9f6fc6e6a4023326dcf13d084e223b3e6860ffc350aea03b8f151309d32877e00fc596098ef95b8848a33cc6787e86c362063d449aaa5abb3ffeff3723a6e98e49c641b56df028148560e8315d63746908251b2ad94a5052e5494d438e46a4a3343f3e7a16d2a2b2b9d37a9db4fab60cf8b88e3a81d02ffbe1df1d1b7fb3d100075b10433e1d960b83d9cea10254c0578171177b8891d2fbbd4d189953ae76a72231d10a4c2b46cdf65ebae2be298d89b665400170d414112b5d7c730fd499e1afa933e0c655ef92bdc06adcc6f416ff4a5d06c377c703e8500a174306da503e1961fac80468ee2d4da5662da2896c9499f2b50a8829096b933deea8abe98405
+[*] TLV encryption sorted
+[*] sending response packet
+[*] running method core_set_session_guid
+[*] sending response packet
+[*] running method core_enumextcmd
+[*] sending response packet
+[*] running method core_enumextcmd
+[*] sending response packet
+[*] running method core_loadlib
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_sys_config_getuid
+[*] sending response packet
+[*] running method stdapi_sys_config_sysinfo
+[*] sending response packet
+[*] running method core_set_uuid
+[*] sending response packet
+[*] running method stdapi_net_config_get_interfaces
+[*] sending response packet
+[*] running method stdapi_net_config_get_routes
+[*] sending response packet
+[*] running method stdapi_registry_check_key_exists
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_check_key_exists
+[*] opening registry key: HKLM\Non\Existent\Key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value_direct
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_query_value_direct
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value_direct
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value_direct
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKLM\Software\Microsoft\Active Setup
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_enum_key_direct
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_enum_value_direct
+[*] opening registry key: HKCU\Environment
+[*] sending response packet
+[*] running method stdapi_registry_create_key
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_delete_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[-] method stdapi_registry_query_value resulted in error: #131075
+[*] sending response packet
+[*] running method stdapi_registry_delete_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] opening registry key: HKCU\test_key
+[-] method stdapi_registry_open_key resulted in error: #131075
+[*] sending response packet
+[*] running method stdapi_registry_create_key
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] sending response packet
+[*] running method stdapi_registry_set_value_direct
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] sending response packet
+[*] running method stdapi_registry_delete_value
+[*] sending response packet
+[*] running method stdapi_registry_close_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[*] sending response packet
+[*] running method stdapi_registry_query_value
+[-] method stdapi_registry_query_value resulted in error: #131075
+[*] sending response packet
+[*] running method stdapi_registry_delete_key
+[*] sending response packet
+[*] running method stdapi_registry_open_key
+[-] method stdapi_registry_open_key resulted in error: #131075
+[*] sending response packet

